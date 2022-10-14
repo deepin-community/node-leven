@@ -1,0 +1,6 @@
+Tests: mytest1
+Depends: @, node-assert
+
+Tests: mybench1
+Depends: @, node-fast-levenshtein
+

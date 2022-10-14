@@ -1,0 +1,4 @@
+# False positive: data
+source-is-missing bench.js line 57 is 1178 characters long (>512)
+source-contains-prebuilt-javascript-object bench.js line 57 is 1178 characters long (>512)
+very-long-line-length-in-source-file bench.js line 58 is 1179 characters long (>512)

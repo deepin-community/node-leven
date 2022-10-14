@@ -1,0 +1,29 @@
+Source: node-leven
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Ying-Chun Liu (PaulLiu) <paulliu@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , nodejs
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/sindresorhus/leven#readme
+Vcs-Git: https://salsa.debian.org/js-team/node-leven.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-leven
+Rules-Requires-Root: no
+
+Package: node-leven
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends}
+ , nodejs
+Provides: ${nodejs:Provides}
+Description: library to measure the difference between two strings
+ leven is a fast JS implementation of the Levenshtein distance algorithm to
+ measure the difference of two strings.
+ .
+ Node.js is an event-based server-side JavaScript engine.

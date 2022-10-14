@@ -1,0 +1,66 @@
+node-leven (3.1.0+~cs1.1.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Add ctype=nodejs to component(s)
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- Yadd <yadd@debian.org>  Sun, 10 Oct 2021 15:35:40 +0200
+
+node-leven (3.1.0+~cs1.1.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update standards version to 4.4.1, no changes needed.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Update lintian overrides
+  * Add levenary little component: frequently used to call leven
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 17 May 2020 08:44:17 +0200
+
+node-leven (3.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Switch upstream test to tape
+  * Switch install and test to pkg-js-tools
+  * Update lintian overrides
+  * Fix debian/copyright
+  * Add Multi-Arch: foreign
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 07 Aug 2019 09:17:45 +0200
+
+node-leven (3.1.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Mon, 08 Jul 2019 03:23:13 +0800
+
+node-leven (2.1.0-2) unstable; urgency=low
+
+  * Enhance tests for autopkgtest.
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Mon, 31 Jul 2017 18:29:46 +0800
+
+node-leven (2.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #866072)
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Thu, 22 Jun 2017 07:53:40 +0000

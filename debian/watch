@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-leven-$1.tar.gz/ \
+ https://github.com/sindresorhus/leven/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,ctype=nodejs,component=levenary,pgpmode=none" \
+ https://registry.npmjs.org/levenary https://registry.npmjs.org/levenary/-/levenary-([\d\.]+)@ARCHIVE_EXT@ checksum
