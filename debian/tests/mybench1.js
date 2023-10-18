@@ -1,14 +1,14 @@
 /* globals bench suite */
 'use strict';
 // var levenshteinEditDistance = require('levenshtein-edit-distance');
-var fastLevenshtein = require('fast-levenshtein').get;
+import fastLevenshtein from '/usr/share/nodejs/fast-levenshtein/levenshtein.js';
 // var levenshteinComponent = require('levenshtein-component');
 // var ld = require('ld').computeDistance;
 // var levdist = require('levdist');
 // var natural = require('natural').LevenshteinDistance;
 // var levenshtein = require('levenshtein');
 // var talisman = require('talisman/metrics/distance/levenshtein');
-var leven = require('leven');
+import leven from 'leven';
 
 function run(fn) {
 	fn('a', 'b');
@@ -37,6 +37,6 @@ console.timeEnd('leven');
 
 console.time('fast-levenshtein');
 for (let i=0; i<n; i++) {
-    run(fastLevenshtein);
+    run(fastLevenshtein.get);
 }
 console.timeEnd('fast-levenshtein');

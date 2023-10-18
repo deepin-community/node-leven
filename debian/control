@@ -7,7 +7,9 @@ Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
  debhelper-compat (= 13)
  , nodejs
+ , node-rollup-plugin-node-resolve
  , node-tape <!nocheck>
+ , rollup
  , dh-sequence-nodejs
 Standards-Version: 4.6.0
 Homepage: https://github.com/sindresorhus/leven#readme
