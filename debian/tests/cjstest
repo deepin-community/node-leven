@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+nodejs debian/tests/cjstest.cjs
+

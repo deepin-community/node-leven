@@ -4,3 +4,9 @@ Depends: @, node-assert
 Tests: mybench1
 Depends: @, node-fast-levenshtein
 
+Tests: cjstest
+Depends: @, node-assert
+
+Test-Command: cd / && node -e 'require("leven")'
+Depends: @, nodejs
+Features: test-name=commonjs

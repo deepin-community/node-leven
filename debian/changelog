@@ -1,3 +1,19 @@
+node-leven (4.0.0+~cs1.1.1-2) unstable; urgency=low
+
+  * Fix lintian-overrides
+  * Use mjs2cjs to build cjs files for node-commist.
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Thu, 05 May 2022 04:33:47 +0800
+
+node-leven (4.0.0+~cs1.1.1-1) unstable; urgency=low
+
+  * New upstream version 4.0.0+~cs1.1.1
+  * fix tests for ES6
+  * Update debian/patches/switch-test-to-tape.diff to latest upstream.
+  * Add tests for Common-JS
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Tue, 03 May 2022 05:53:48 +0800
+
 node-leven (3.1.0+~cs1.1.1-2) unstable; urgency=medium
 
   * Team upload

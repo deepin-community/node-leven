@@ -6,3 +6,16 @@
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	if [ ! -e package.json.debsave ]; \
+		then cp -f package.json package.json.debsave; \
+	fi
+	dh_auto_build --buildsystem=nodejs
+
+override_dh_auto_clean:
+	dh_auto_clean --buildsystem=nodejs
+	if [ -e package.json.debsave ]; \
+		then mv -f package.json.debsave package.json; \
+	fi
+	rm -rf node_modules

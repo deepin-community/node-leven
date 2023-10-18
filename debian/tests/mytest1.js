@@ -1,5 +1,5 @@
-var m = require('leven');
-var t = require('assert');
+import m from 'leven';
+import t from 'assert';
 
 t.equal(m('a', 'b'), 1);
 t.equal(m('ab', 'ac'), 1);
